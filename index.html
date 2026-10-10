@@ -1,0 +1,76 @@
+
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Nova Core Shopping Centre</title>
+
+    <style>
+        body {
+            background-color: #4C5B8F;
+            color: white;
+            font-family: Arial, sans-serif;
+            text-align: center;
+            padding-top: 50px;
+        }
+
+        button {
+            background-color: #ffffff;
+            color: #4C5B8F;
+            padding: 12px 20px;
+            margin: 10px;
+            border: none;
+            border-radius: 8px;
+            font-size: 16px;
+            cursor: pointer;
+        }
+
+        button:hover {
+            background-color: #dddddd;
+        }
+
+        #output {
+            margin-top: 30px;
+            font-size: 18px;
+        }
+    </style>
+</head>
+
+<body>
+
+    <h1>Nova Core Shopping Centre</h1>
+
+    <p>Choose an option:</p>
+
+    <button onclick="showAccessories()">5 - Accessories</button>
+    <button onclick="exitShop()">6 - Exit</button>
+
+    <div id="output"></div>
+
+    <script>
+        function showAccessories() {
+            document.getElementById("output").innerHTML = `
+                <h2>Welcome to the Accessories page!</h2>
+
+                <h3>Our Accessories:</h3>
+
+                <p>
+                    <strong>The Beam (65W charger - $49)</strong><br>
+                    Charges your Nova Core to 80% in just 20 min.
+                </p>
+
+                <p>
+                    <strong>The Flow (Charging pad)</strong><br>
+                    Charges all your electric devices all at once!
+                </p>
+            `;
+        }
+
+        function exitShop() {
+            document.getElementById("output").innerHTML = `
+                <h2>Thank you for using Nova Core Shopping Centre online.</h2>
+            `;
+        }
+    </script>
+
+</body>
+</html>
